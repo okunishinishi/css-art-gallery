@@ -1,0 +1,613 @@
+
+/***** board ******/
+#chess .board{
+    margin: 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
+    border-radius: 2px;
+    position: relative;
+    padding: 25px;
+    background-color: #FEFED0;
+    display: inline-block;
+}
+#chess .board table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#chess .board td{
+    padding: 0;
+}
+#chess .board .square{
+    width:60px;
+    height: 60px;
+    border-radius: 1px;
+    text-align: center;
+    position: relative;
+}
+#chess .board .square:before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+#chess .board.on-choice .square:before{
+    display: block;
+    background: rgba(0,0,0,0.1);
+}
+#chess .board.on-select .square:before{
+    display: block;
+    background: rgba(0,0,0,0.2);
+}
+
+#chess .board .square.movable:before{
+    box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.1);
+    background-color: rgba(255,255,255,0.1);
+}
+#chess .board .square.movable:hover:before{
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255,255,255,0.3);
+}
+#chess .board .square.attackable:before{
+}
+#chess .board .square.check:before{
+}
+
+
+#chess .board .square.movable.ready:before{
+    display: block;
+    background-color:orange;
+
+}
+
+
+#chess .board .square[data-color=light]{
+    background-color: #FEFED0;
+}
+#chess .board .square[data-color=dark]{
+    background-color: #C0853A;
+}
+
+#chess .board .frame-bar{
+    position: absolute;
+    background-color: #7a481a;
+    z-index: 2;
+}
+#chess .board .frame-bar[data-dir=top],
+#chess .board .frame-bar[data-dir=bottom]{
+    left:0;
+    width:100%;
+    height: 25px;
+    background-image: -webkit-linear-gradient(#92561F, #7A481A);
+}
+#chess .board .frame-bar[data-dir=left],
+#chess .board .frame-bar[data-dir=right]{
+    top:0;
+    width:25px;
+    height:100%;
+    background-image: -webkit-linear-gradient(left, #92561F, #7A481A);
+}
+#chess .board .frame-bar[data-dir=top]{
+    top:0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#chess .board .frame-bar[data-dir=right]{
+    right: 0;
+}
+#chess .board .frame-bar[data-dir=bottom]{
+    bottom: 0;
+}
+#chess .board .frame-bar[data-dir=left]{
+    left: 0;
+}
+#chess .board .frame-bar[data-dir=left]:before{
+    content: "";
+    top:25px;
+    left:0;
+    width:100%;
+    height: 491px;
+    position: absolute;
+    box-shadow: 3px 0px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/*****　piece *****/
+#chess .piece{
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    top:2px;
+    left:2px;
+    border:1px solid transparent;
+    z-index: 5;
+    -moz-user-select:none;
+    -webkit-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+#chess .piece.selected{
+    z-index: 20;
+    pointer-events:none;;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+#chess .piece.selectable{
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+#chess .piece .piece-inner{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2) inset;
+    text-align: center;
+}
+
+#chess .piece[data-color=black]{
+    background-color: #3A1C00;
+    background-image:-webkit-linear-gradient(#5A4938, #361C02);
+    border-color: #3A1C00;
+}
+#chess .piece[data-color=black] .piece-inner,
+#chess .piece[data-color=black] .parts.cut{
+    background: #462D13;
+}
+#chess .piece[data-color=black] .parts,
+#chess .piece[data-color=black] .foot:after,
+#chess .piece[data-color=black] .body:before,
+#chess .piece[data-color=black] .body:after,
+#chess .piece[data-color=black] .head:before,
+#chess .piece[data-color=black] .head:after,
+#chess .piece[data-color=black] .needle:before,
+#chess .piece[data-color=black] .needle:after,
+#chess .piece[data-color=black] .needle-inner:before{
+    background-color: #F0EDE7;
+}
+
+#chess .piece[data-color=white]{
+    background-color: #F0EDE7;
+    border-color: #FFFCF5;
+    background-image:-webkit-linear-gradient(#FFFFFE, #E4DDD1);
+}
+#chess .piece[data-color=white] .piece-inner,
+#chess .piece[data-color=white] .parts.cut{
+    background-color: #F1EEE7;
+}
+#chess .piece[data-color=white] .parts,
+#chess .piece[data-color=white] .foot:after,
+#chess .piece[data-color=white] .head:before,
+#chess .piece[data-color=white] .head:after,
+#chess .piece[data-color=white] .body:before,
+#chess .piece[data-color=white] .body:after,
+#chess .piece[data-color=white] .needle:before,
+#chess .piece[data-color=white] .needle:after,
+#chess .piece[data-color=white] .needle-inner:before{
+    background-color: #403311;
+}
+#chess .piece .icon{
+    position: relative;
+    top:5px;
+}
+#chess .piece .parts{
+    margin: 0 auto;
+}
+#chess .piece .foot{
+    width:18px;
+    height: 5px;
+    border-radius: 2px 2px 1px 1px;
+    position: relative;
+}
+#chess .piece .foot:after{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border-radius: 48%;
+    bottom: -2px;
+    height: 4px;
+    content: "";
+}
+
+/* pawn */
+#chess .piece[data-type=pawn] .icon{
+    top:7px;
+}
+#chess .piece[data-type=pawn] .head{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-bottom: -1px;
+}
+#chess .piece[data-type=pawn] .neck{
+    width:13px;
+    height: 3px;
+    border-radius: 50%;
+    margin-bottom: -4px;
+}
+#chess .piece[data-type=pawn] .body{
+    height: 16px;
+    width:6px;
+    position: relative;
+}
+#chess .piece[data-type=pawn] .body:before,
+#chess .piece[data-type=pawn] .body:after{
+    content: "";
+    height: 18px;
+    position: absolute;
+    width: 3px;
+}
+#chess .piece[data-type=pawn] .body:before{
+    -moz-transform: skew(-9deg);
+    -webkit-transform: skew(-9deg);
+    -o-transform: skew(-9deg);
+    transform: skew(-9deg);
+    left: -1px;
+}
+#chess .piece[data-type=pawn] .body:after{
+    right: -1px;
+    -moz-transform: skew(9deg);
+    -webkit-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    transform: skew(9deg);
+}
+#chess .piece[data-type=pawn] .foot{
+    height: 4px;
+}
+
+
+/* rook */
+#chess .piece[data-type=rook] .icon{
+    top:6px;
+}
+#chess .piece[data-type=rook] .hat{
+    height: 3px;
+    width:24px;
+    position: relative;
+    background: transparent;
+}
+#chess .piece[data-type=rook] .hat-block-0,
+#chess .piece[data-type=rook] .hat-block-1,
+#chess .piece[data-type=rook] .hat-block-2
+{
+    position: absolute;
+    height: 4px;
+    width:5px;
+    top:0;
+}
+#chess .piece[data-type=rook] .hat-block-0{
+    left: 0;
+}
+#chess .piece[data-type=rook] .hat-block-1{
+    left:9px;
+    width:6px;
+}
+#chess .piece[data-type=rook] .hat-block-2{
+    right: 0;
+}
+
+#chess .piece[data-type=rook] .head{
+    width:24px;
+    height: 7px;
+    margin-bottom: -1px;
+    border-radius: 0 0 1px 1px;
+}
+#chess .piece[data-type=rook] .body{
+    height: 14px;
+    width:12px;
+    position: relative;
+}
+#chess .piece[data-type=rook] .body:before,
+#chess .piece[data-type=rook] .body:after
+{
+    position: absolute;
+    width:5px;
+    height: 100%;
+    bottom:0;
+    content: "";
+}
+#chess .piece[data-type=rook] .body:before{
+    left: -1px;
+    -moz-transform:skew(-3deg);
+    -webkit-transform:skew(-3deg);
+    -o-transform:skew(-3deg);
+    transform:skew(-3deg);
+}
+#chess .piece[data-type=rook] .body:after{
+    right: -1px;
+    -moz-transform:skew(3deg);
+    -webkit-transform:skew(3deg);
+    -o-transform:skew(3deg);
+    transform:skew(3deg);
+}
+
+
+#chess .piece[data-type=rook] .foot{
+    width:25px;
+    height: 7px;
+}
+/* knight */
+#chess .piece[data-type=knight] .nose{
+
+}
+#chess .piece[data-type=knight] .ear{
+    -moz-transform: skew(30deg);
+    -webkit-transform: skew(30deg);
+    -o-transform: skew(30deg);
+    transform: skew(30deg);
+    height: 3px;
+    left: -3px;
+    position: relative;
+    width: 3px;
+    margin-bottom: -2px;
+}
+#chess .piece[data-type=knight] .head{
+    width:9px;
+    height: 12px;
+    -moz-transform:skew(-30deg);
+    -webkit-transform:skew(-30deg);
+    -o-transform:skew(-30deg);
+    transform:skew(-30deg);
+    float: left;
+    margin: 2px 12px;
+    border-radius:3px 0 1px 2px;
+}
+#chess .piece[data-type=knight] .neck{
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    border-radius: 0 8px 0 0;
+    height: 21px;
+    left: 4px;
+    margin-bottom: -5px;
+    position: relative;
+    width: 13px;
+}
+#chess .piece[data-type=knight] .neck-2{
+    float: right;
+    height: 10px;
+    width: 4px;
+    margin-right: 12px;
+    -moz-transform:skew(10deg);
+    -webkit-transform:skew(10deg);
+    -o-transform:skew(10deg);
+    transform:skew(10deg);
+    margin-bottom: -4px;
+}
+
+#chess .piece[data-type=knight] .body{
+    -moz-transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    transform: skew(-30deg);
+    border-radius: 6px 10px 1px 0;
+    height: 10px;
+    margin-bottom: -1px;
+    width: 16px;
+    position: relative;
+    left: 3px;
+}
+#chess .piece[data-type=knight] .foot{
+    width:24px;
+    position: relative;
+    left: 1px;
+}
+
+
+/* bishop */
+#chess .piece[data-type=bishop] .hat{
+    width:2px;
+    height: 6px;
+    border-radius: 50% 50% 0 0;
+    margin-bottom: -4px;
+}
+#chess .piece[data-type=bishop] .head{
+    width:8px;
+    height: 13px;
+    border-radius: 50% 50% 45% 45%;
+    margin-bottom: -2px;
+}
+#chess .piece[data-type=bishop] .cut{
+    height: 6px;
+    position: absolute;
+    right: 18px;
+    top: 3px;
+    width: 2px;
+    -moz-transform:skew(-35deg);
+    -webkit-transform:skew(-35deg);
+    -o-transform:skew(-35deg);
+    transform:skew(-35deg);
+}
+#chess .piece[data-type=bishop] .neck{
+    width:13px;
+    height: 3px;
+    border-radius: 50%;
+    margin-bottom: -2px;
+}
+#chess .piece[data-type=bishop] .body{
+    width:5px;
+    height: 13px;
+    position: relative;
+}
+#chess .piece[data-type=bishop] .body:before,
+#chess .piece[data-type=bishop] .body:after{
+    content: "";
+    height: 18px;
+    position: absolute;
+    width: 3px;
+}
+#chess .piece[data-type=bishop] .body:before{
+    -moz-transform: skew(-9deg);
+    -webkit-transform: skew(-9deg);
+    -o-transform: skew(-9deg);
+    transform: skew(-9deg);
+    left: -1px;
+}
+#chess .piece[data-type=bishop] .body:after{
+    right: -1px;
+    -moz-transform: skew(9deg);
+    -webkit-transform: skew(9deg);
+    -o-transform: skew(9deg);
+    transform: skew(9deg);
+}
+#chess .piece[data-type=bishop] .foot{
+    width:19px;
+}
+
+
+/* queen */
+#chess .piece[data-type=queen] .crown{
+    position: relative;
+    height: 22px;
+    width:25px;
+    background-color: transparent;
+}
+#chess .piece[data-type=queen] .needle:before{
+    content: "";
+    position: absolute;
+    width:4px;
+    height: 4px;
+    border-radius: 50%;
+    left:2px;
+    top:-1px;
+}
+#chess .piece[data-type=queen] .needle:after{
+    content: "";
+    position: absolute;
+    width:10%;
+    height: 70%;
+    top:30%;
+    left: 45%;
+}
+#chess .piece[data-type=queen] .needle{
+    position: absolute;
+    height: 20px;
+    width: 8px;
+    left: 9px;
+    background-color: transparent;
+    -moz-transform-origin:50% 150%;
+    -webkit-transform-origin:50% 150%;
+    -o-transform-origin:50% 150%;
+    transform-origin:50% 150%;
+}
+#chess .piece[data-type=queen] .needle-inner{
+    width:50%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#chess .piece[data-type=queen] .needle-inner:before{
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+#chess .piece[data-type=queen] .needle-inner.left:before{
+    -moz-transform: skew(-10deg);
+    -webkit-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    left: 50%;
+}
+#chess .piece[data-type=queen] .needle-inner.right:before{
+    -moz-transform: skew(10deg);
+    -webkit-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    right: 50%;
+}
+#chess .piece[data-type=queen] .needle-0{
+    -moz-transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+    -o-transform:rotate(-30deg);
+    transform:rotate(-30deg);
+}
+#chess .piece[data-type=queen] .needle-1{
+    -moz-transform:rotate(-10deg);
+    -webkit-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+#chess .piece[data-type=queen] .needle-2{
+    display: none;
+}
+#chess .piece[data-type=queen] .needle-3{
+    -moz-transform:rotate(10deg);
+    -webkit-transform:rotate(10deg);
+    -o-transform:rotate(10deg);
+    transform:rotate(10deg);
+}
+#chess .piece[data-type=queen] .needle-4{
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    transform:rotate(30deg);
+}
+#chess .piece[data-type=queen] .body{
+    width:17.5px;
+    border-radius: 50% 50% 2px 2px;
+    height: 8px;
+    margin-top: -5px;
+    z-index: 100;
+}
+#chess .piece[data-type=queen] .foot{
+    width:20px;
+}
+
+
+/* king */
+#chess .piece[data-type=king] .cross{
+    position: relative;
+    height: 8px;
+    width:8px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+#chess .piece[data-type=king] .cross-bar-vertical{
+    position: absolute;
+    width:40%;
+    left:30%;
+    height: 125%;
+}
+#chess .piece[data-type=king] .cross-bar-horizontal{
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+#chess .piece[data-type=king] .head:before,
+#chess .piece[data-type=king] .head:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width:16px;
+    height: 16px;
+    top:-3px;
+}
+#chess .piece[data-type=king] .head:before{
+    left:-3px;
+    border-radius: 50% 50% 0 9px;
+}
+#chess .piece[data-type=king] .head:after{
+    right:-3px;
+    border-radius: 50% 50% 9px 0;
+}
+#chess .piece[data-type=king] .head{
+    position: relative;
+    border-radius: 40% 40% 40% 40%;
+    width:20px;
+    height: 16px;
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+#chess .piece[data-type=king] .body{
+    width:16px;
+    height: 2px;
+    margin-top: -2px;
+}
+#chess .piece[data-type=king] .foot{
+    width:20px;
+}

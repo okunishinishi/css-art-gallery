@@ -1,0 +1,48 @@
+#rainbow .rainbow{
+    overflow: hidden;
+    width:120px;
+    height: 200px;
+    box-shadow:inset 1px 1px 5px #333;
+    background: #FDFDFD;
+    border-radius: 2px;
+}
+#rainbow .rainbow-inner{
+    width:192px;
+    height: 912px;
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    transform:rotate(30deg);
+    -moz-transform-origin:92% 20%;
+    -webkit-transform-origin:92% 20%;
+    -o-transform-origin:92% 20%;
+    transform-origin:92% 20%;
+}
+#rainbow .part{
+    padding: 8px;
+    border-radius: 50%;
+}
+#rainbow .inner{
+    width:80px;
+    height: 800px;
+    background: #FDFDFD;
+}
+#rainbow .purple{
+    background: #800080;
+}
+#rainbow .indigo{
+    background:#4B0082;
+}
+#rainbow .green{
+    background:#008000;
+}
+#rainbow .yellow{
+    background: #FFFF00;
+}
+#rainbow .orange{
+    background:#FFA500;
+}
+#rainbow .red{
+    background: #FF0000;
+}
+

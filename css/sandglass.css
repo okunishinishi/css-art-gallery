@@ -1,0 +1,161 @@
+#sandglass .sg-root {
+    position: relative;
+    overflow: hidden;
+}
+#sandglass .sg-glass-up,
+#sandglass .sg-glass-down {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+    background-color: rgba(165, 188, 233, 0.6);
+    background-image: -webkit-radial-gradient(33% 33%, circle, rgba(247, 249, 253, 0.6), rgba(165, 188, 233, 0.6));
+    background-image: -moz-radial-gradient(33% 33%, circle, rgba(247, 249, 253, 0.6), rgba(165, 188, 233, 0.6));
+    background-image: -o-radial-gradient(33% 33%, circle, rgba(247, 249, 253, 0.6), rgba(165, 188, 233, 0.6));
+    background-image: -ms-radial-gradient(33% 33%, circle, rgba(247, 249, 253, 0.6), rgba(165, 188, 233, 0.6));
+    background-image: radial-gradient(33% 33%, circle, rgba(247, 249, 253, 0.6), rgba(165, 188, 233, 0.6));
+    border: 1px solid rgba(173, 194, 235, 0.6);
+    overflow: hidden;
+    margin-left: 30px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+#sandglass .sg-glass-up {
+    -webkit-border-radius: 80% 140% 80% 40%;
+    -moz-border-radius: 80% 140% 80% 40%;
+    -o-border-radius: 80% 140% 80% 40%;
+    -ms-border-radius: 80% 140% 80% 40%;
+    border-radius: 80% 140% 80% 40%;
+    margin-bottom: 20px;
+}
+#sandglass .sg-glass-down {
+    -webkit-border-radius: 80% 40% 80% 140%;
+    -moz-border-radius: 80% 40% 80% 140%;
+    -o-border-radius: 80% 40% 80% 140%;
+    -ms-border-radius: 80% 40% 80% 140%;
+    border-radius: 80% 40% 80% 140%;
+    z-index: 0;
+}
+#sandglass .sg-board-up,
+#sandglass .sg-board-down {
+    height: 20px;
+    width: 144px;
+    background-color: #5a260b;
+    background-color: #000000;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5a260b 20%), to(#000000));
+    background-image: -webkit-linear-gradient(0deg, #5a260b 20%, #7e350f 60%, #000000);
+    background-image: -moz-linear-gradient(0deg, #5a260b 20%, #7e350f 60%, #000000);
+    background-image: -o-linear-gradient(0deg, #5a260b 20%, #7e350f 60%, #000000);
+    background-image: -ms-linear-gradient(0deg, #5a260b 20%, #7e350f 60%, #000000);
+    background-image: linear-gradient(0deg, #5a260b 20%, #7e350f 60%, #000000);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 4;
+}
+#sandglass .sg-board-up {
+    margin-bottom: -5px;
+}
+#sandglass .sg-board-down {
+    margin-top: -5px;
+}
+#sandglass .sg-bar-left,
+#sandglass .sg-bar-right {
+    width: 10px;
+    height: 200px;
+    background-color: #5a260b;
+    background-color: #2d1305;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#5a260b 20%), to(#2d1305));
+    background-image: -webkit-linear-gradient(0deg, #5a260b 20%, #682c0d 60%, #2d1305);
+    background-image: -moz-linear-gradient(0deg, #5a260b 20%, #682c0d 60%, #2d1305);
+    background-image: -o-linear-gradient(0deg, #5a260b 20%, #682c0d 60%, #2d1305);
+    background-image: -ms-linear-gradient(0deg, #5a260b 20%, #682c0d 60%, #2d1305);
+    background-image: linear-gradient(0deg, #5a260b 20%, #682c0d 60%, #2d1305);
+    margin: 0 10px;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+#sandglass .sg-bar-left {
+    float: left;
+}
+#sandglass .sg-bar-right {
+    float: right;
+}
+#sandglass .sg-sand-up,
+#sandglass .sg-sand-down {
+    background-color: #dcd216;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0e968), to(#dcd216));
+    background-image: -webkit-linear-gradient(#f0e968, #dcd216);
+    background-image: -moz-linear-gradient(#f0e968, #dcd216);
+    background-image: -o-linear-gradient(#f0e968, #dcd216);
+    background-image: -ms-linear-gradient(#f0e968, #dcd216);
+    background-image: linear-gradient(#f0e968, #dcd216);
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 150%;
+    left: -50%;
+    height: 30px;
+    bottom: 0;
+}
+#sandglass .sg-sand-down {
+    height: 34px;
+}
+#sandglass .sg-sand-down-mountain {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 0 15px 0 0;
+    -moz-border-radius: 0 15px 0 0;
+    -o-border-radius: 0 15px 0 0;
+    -ms-border-radius: 0 15px 0 0;
+    border-radius: 0 15px 0 0;
+    position: absolute;
+    display: block;
+    background-color: #f0e968;
+    z-index: -1;
+    left: 12px;
+    bottom: 8px;
+}
+#sandglass .sg-sand-middle {
+    position: absolute;
+    top: auto;
+    left: -12px;
+    bottom: -3px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-border-radius: 0 0 100% 100%;
+    -moz-border-radius: 0 0 100% 100%;
+    -o-border-radius: 0 0 100% 100%;
+    -ms-border-radius: 0 0 100% 100%;
+    border-radius: 0 0 100% 100%;
+    z-index: 1;
+    width: 44px;
+    height: 10px;
+    background-color: #dcd216;
+}

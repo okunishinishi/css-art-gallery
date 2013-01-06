@@ -1,0 +1,72 @@
+#flower .container{
+    margin-top:30px;
+    padding:10px;
+    position: relative;
+}
+#flower .petal{
+    background: none repeat scroll 0 0 #EEEE00;
+    border-radius: 85% 85% 98% 98%;
+    height: 40px;
+    width: 16px;
+    position: absolute;
+    -moz-transform-origin:50% 0%;
+    -webkit-transform-origin:50% 0%;
+    -o-transform-origin:50% 0%;
+    transform-origin:50% 0%;
+}
+
+#flower .petal:nth-child(1){
+    -moz-transform:rotate(60deg);
+    -webkit-transform:rotate(60deg);
+    -o-transform:rotate(60deg);
+    transform:rotate(60deg);
+}
+#flower .petal:nth-child(2){
+    -moz-transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    -o-transform:rotate(120deg);
+    transform:rotate(120deg);
+}
+#flower .petal:nth-child(3){
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+#flower .petal:nth-child(4){
+    -moz-transform:rotate(240deg);
+    -webkit-transform:rotate(240deg);
+    -o-transform:rotate(240deg);
+    transform:rotate(240deg);
+}
+#flower .petal:nth-child(5){
+     -moz-transform:rotate(300deg);
+    -webkit-transform:rotate(300deg);
+    -o-transform:rotate(300deg);
+    transform:rotate(300deg);
+}
+
+#flower .center{
+    background: -moz-radial-gradient(72% 33% , circle , #F0F0F0 -1%, #E5E5B8 13px, transparent 10px) repeat scroll 0 0 #ECECEA;
+    background: -o-radial-gradient(72% 33% , circle , #F0F0F0 -1%, #E5E5B8 13px, transparent 10px) repeat scroll 0 0 #ECECEA;
+    background: radial-gradient(72% 33% , circle , #F0F0F0 -1%, #E5E5B8 13px, transparent 10px) repeat scroll 0 0 #ECECEA;
+    background: -webkit-gradient(radial, 72% 33%, 0, right top, 500, from(#F0F0F0 ), color-stop(20%, #E5E5B8), color-stop(20%, transparent), to(rgba(255,255,255,0)));
+    border-radius: 50% 50% 50% 50%;
+    height: 17px;
+    left: 10px;
+    position: absolute;
+    top: 2px;
+    width: 16px;
+}
+
+#flower .stem{
+    border-color: transparent #33AA22;
+    border-radius: 0 99% 0 99%;
+    border-style: solid;
+    border-width: 0 4px 0 0;
+    height: 67px;
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    width: 20px;
+}

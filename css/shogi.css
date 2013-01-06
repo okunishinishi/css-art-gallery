@@ -1,0 +1,183 @@
+#shogi .board{
+    box-shadow:0px 0px 6px rgba(0,0,0, 0.1), 5px 5px 10px rgba(0,0,0,0.3);
+    padding: 25px;
+    background-color: #fde9a4;
+    background-image: -webkit-linear-gradient(#FDE9A4, #E9D388);
+    background-image: -moz-linear-gradient(#FDE9A4, #E9D388);
+    background-image: -o-linear-gradient(#FDE9A4, #E9D388);
+    background-image: -ms-linear-gradient(#FDE9A4, #E9D388);
+    border: 1px solid #edda9a;
+    display: inline-block;
+    border-radius: 2px;
+    margin: 10px;
+}
+#shogi .board table{
+    border-collapse: collapse;
+}
+#shogi .board table tr:nth-child(3n) td.square:nth-child(3n):before{
+    position: absolute;
+    content: "";
+    background-color: #655;
+    border-radius: 50%;
+    width:8px;
+    height: 8px;
+    right:-4.5px;
+    bottom:-4.5px;
+    display: block;
+}
+#shogi .board table tr:nth-child(3n) td.square:nth-child(9n):before,
+#shogi .board table tr:nth-child(9n) td.square:nth-child(3n):before{
+    display: none;
+}
+
+
+#shogi .board table td.square{
+    width:60px;
+    height: 60px;
+    border: 1px solid #655;
+    position: relative;
+    text-align: center;
+}
+
+/************
+  piece
+*************/
+#shogi .piece{
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 55px;
+}
+#shogi .piece[data-dir=south]{
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+#shogi .piece > .half{
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 0, 0, 0);
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+}
+#shogi .piece > .half.left{
+    left: 0;
+}
+#shogi .piece > .half.left > .head,
+#shogi .piece > .half.left > .body{
+    border-left-color: #DAC287;
+}
+#shogi .piece > .half.right{
+    right: 0;
+}
+#shogi .piece > .half.right > .head,
+#shogi .piece > .half.right > .body{
+    border-left-color: #DAC287;
+}
+
+#shogi .piece > .half > .head{
+    position: absolute;
+    width: 80%;
+    height: 21%;
+    background-color: #FAD577;
+    z-index: 1;
+    border: 1px solid transparent;
+    box-shadow: 1px -1px 0px rgba(0, 0, 0, 0.1);
+    border-bottom-width:0;
+}
+#shogi .piece > .half.left > .head{
+    -webkit-transform: skew(-60deg);
+    left: 80%;
+}
+#shogi .piece > .half.right > .head{
+    -webkit-transform: skew(60deg);
+    right: 80%;
+}
+
+#shogi .piece > .half > .body{
+    position: absolute;
+    width: 145%;
+    height: 70%;
+    top: 22%;
+    background-color: #FAD577;
+    box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+    border: 1px solid transparent;
+    border-bottom-color: #DAC287;
+    border-top-width: 0;
+}
+#shogi .piece[data-movable=true]:hover > .half > .body{
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+#shogi .piece[data-movable=true] > .label{
+    cursor: pointer;
+}
+#shogi .piece > .half > .body:before {
+    position: absolute;
+    height: 4px;
+    content: "";
+    width: 98%;
+    background-color: #FAD577;
+    left: 1%;
+    z-index: 2;
+    top: -2px;
+    border-radius: 4px 4px 0 0;
+}
+
+#shogi .piece > .half.left > .body{
+    -webkit-transform: skew(-5deg);
+    left: 30%
+}
+#shogi .piece > .half.right > .body{
+    -webkit-transform: skew(5deg);
+    right: 30%
+}
+
+#shogi .piece > .label{
+    position: relative;
+    z-index: 3;
+    line-height: 17px;
+    width: 20px;
+    margin-top: 15px;
+    display: inline-block;
+    font-weight: bold;
+    cursor: default;
+    color: #333;
+}
+
+#shogi .piece[data-type=hu]{
+    height: 45px;
+    width: 43px;
+}
+#shogi .piece[data-type=hu] .label{
+    line-height: 15px;
+    margin-top: 12px;
+}
+
+#shogi .piece[data-type=keima],
+#shogi .piece[data-type=kyosha]
+{
+    height: 50px;
+    width: 46px;
+}
+#shogi .piece[data-type=ou],
+#shogi .piece[data-type=gyoku],
+#shogi .piece[data-type=hisha],
+#shogi .piece[data-type=kaku]{
+    height: 60px;
+    width: 55px;
+    margin-top:-5px;
+}
+#shogi .piece[data-type=ou] .label,
+#shogi .piece[data-type=gyoku] .label,
+#shogi .piece[data-type=hisha] .label,
+#shogi .piece[data-type=kaku] .label{
+    font-size: 1.5em;
+    line-height: 21px;
+    margin-top: 13px;
+
+}

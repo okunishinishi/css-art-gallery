@@ -1,0 +1,48 @@
+#fish .fish{
+    width:88px;
+    height: 20px;
+    position: relative;
+}
+#fish .body{
+    overflow: hidden;
+    height: 20px;
+}
+#fish .body-inner{
+    background: none repeat scroll 0 0 #b0c4de;
+    border-radius: 50% 50% 50% 50%;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    width: 70px;
+}
+#fish .body.downer .body-inner{
+    margin-top:-30px;
+}
+#fish .tail{
+    border-width:20px 20px 16px 0px;
+    border-color:transparent #b0c4de transparent transparent;
+    border-style: solid;
+    width:0px;
+    height: 3px;
+    float: right;
+}
+#fish .eye{
+    position: absolute;
+    left: 17%;
+    top: 42%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #447;
+}
+#fish .gill{
+    border-color: transparent #447777;
+    border-radius: 40% 40% 40% 40%;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    height: 20px;
+    left: 26%;
+    position: absolute;
+    top: 40%;
+    width: 10px;
+}

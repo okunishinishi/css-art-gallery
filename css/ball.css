@@ -1,0 +1,10 @@
+#ball .ball{
+    background: -moz-radial-gradient(72% 33% , circle , #F0F0F0 -1%, #3344AA 100px, transparent 100px) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(radial, 72% 33%, 0, right top, 500, from(#F0F0F0 ), color-stop(20%, #3344AA), color-stop(20%, transparent), to(rgba(255,255,255,0)));
+    background: -o-gradient(radial, 72% 33%, 0, right top, 500, from(#F0F0F0 ), color-stop(20%, #3344AA), color-stop(20%, transparent), to(rgba(255,255,255,0)));
+    background: gradient(radial, 72% 33%, 0, right top, 500, from(#F0F0F0 ), color-stop(20%, #3344AA), color-stop(20%, transparent), to(rgba(255,255,255,0)));
+    border-radius: 50% 50% 50% 50%;
+    box-shadow: 0 0 1px #888888;
+    height: 80px;
+    width: 80px;
+}

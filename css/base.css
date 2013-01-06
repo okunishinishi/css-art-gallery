@@ -1,0 +1,68 @@
+body{
+    background: #F0F0F0;
+    color: #333;
+    margin:0px;
+}
+
+header{
+    background: -moz-linear-gradient(#F0F0F0, #DDD) repeat scroll 0 0 #BBBBBB;
+    background: -o-linear-gradient(#F0F0F0, #DDD) repeat scroll 0 0 #BBBBBB;
+    background: linear-gradient(#F0F0F0, #DDD) repeat scroll 0 0 #BBBBBB;
+    background: -webkit-gradient(linear, left top, left bottom, from(#F0F0F0), to(#DDD)) repeat scroll 0 0 transparent;
+    height:35px;
+    border-bottom:1px solid #AAA;
+    text-align:center;
+    padding:10px 10px 0px;
+}
+header h2{
+    margin:0px;
+}
+header .subtitle{
+    font-size: 12px;
+    font-style:italic;
+}
+header .left{
+    float:left;
+}
+header .right{
+    float: right;
+}
+
+footer{
+    background: -moz-linear-gradient(#535353, #181818) repeat scroll 0 0 #111111;
+    background: -o-linear-gradient(#535353, #181818) repeat scroll 0 0 #111111;
+    background: linear-gradient(#535353, #181818) repeat scroll 0 0 #111111;
+    background: -webkit-gradient(linear, left top, left bottom, from(#535353), to(#181818)) repeat scroll 0 0 transparent;
+    border: 1px solid #2A2A2A;
+    color: #FFFFFF;
+    float: left;
+    font-weight: bold;
+    padding: 5px;
+    text-align: right;
+    text-shadow: 0 -1px 1px #000000;
+    width: 100%;
+    font-family: Helvetica,Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#22BFF0;
+    cursor:pointer;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+div[data-role=panel]{
+    position: relative;
+    margin:20px;
+    min-height: 60px;
+    min-width: 100px;
+    float: left;
+    padding: 10px;
+}
+
+html body section div.fb-like{
+    float: right;
+    margin-top:25px;
+}

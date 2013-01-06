@@ -1,0 +1,45 @@
+
+
+#arrow .arrow-up, .arrow-down {
+    height: 60px;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    width: 40px;
+}
+
+#arrow .arrow-up {
+    height: 60px;
+    left: 10px;
+    width: 40px;
+
+}
+#arrow .arrow-up .arrow-head {
+    border-width: 0 20px 30px;
+    border-color: transparent transparent #AAEEAA;
+    border-style: solid;
+}
+#arrow .arrow-up .arrow-body {
+    background: none repeat scroll 0 0 #AAEEAA;
+}
+
+#arrow .arrow-down {
+    height: 60px;
+    left: 62px;
+    width: 40px;
+}
+
+#arrow .arrow-down .arrow-body {
+    background: none repeat scroll 0 0 #EEAAAA;
+}
+#arrow .arrow-body {
+    height: 50%;
+    margin: auto;
+    width: 50%;
+}
+
+#arrow .arrow-down .arrow-head {
+    border-width: 30px 20px 0;
+    border-color: #EEAAAA transparent transparent;
+    border-style: solid;
+}

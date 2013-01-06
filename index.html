@@ -1,0 +1,2337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css"/>
+
+    <link rel="stylesheet" href=""/>
+    <link rel="stylesheet" href="css/paper.css"/>
+    <link rel="stylesheet" href="css/rainbow.css"/>
+    <link rel="stylesheet" href="css/clock.css"/>
+    <link rel="stylesheet" href="css/fish.css"/>
+    <link rel="stylesheet" href="css/search-box.css"/>
+    <link rel="stylesheet" href="css/flower.css"/>
+    <link rel="stylesheet" href="css/paint-night.css"/>
+    <link rel="stylesheet" href="css/ball.css"/>
+    <link rel="stylesheet" href="css/digit.css"/>
+    <link rel="stylesheet" href="css/star.css"/>
+    <link rel="stylesheet" href="css/question-mark.css"/>
+    <link rel="stylesheet" href="css/arrow.css"/>
+    <link rel="stylesheet" href="css/balloon.css"/>
+    <link rel="stylesheet" href="css/book-shelf.css"/>
+    <link rel="stylesheet" href="css/bathroom.css"/>
+    <link rel="stylesheet" href="css/nosmoke.css"/>
+    <link rel="stylesheet" href="css/othello.css"/>
+    <link rel="stylesheet" href="css/chess.css"/>
+    <link rel="stylesheet" href="css/shogi.css"/>
+    <link rel="stylesheet" href="css/sandglass.css"/>
+    <link rel="stylesheet" href="css/one-day-calendar.css"/>
+
+    <link rel="shortcut icon" href="fav.ico">
+    <title>CSS art gallery</title>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=290986560975278";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<header>
+    <h2>
+        StyleStyle
+        <span class="subtitle">
+            no img, no script. only css.
+        </span>
+    </h2>
+</header>
+
+<section>
+<div id="paper" data-role="panel">
+    <div class="paper">
+        <div class="message">These illustrations are drawn by css, without images.</div>
+    </div>
+</div>
+
+<!--
+    <div id="" data-role="panel">
+    </div>
+-->
+<div id="one-day-calendar" data-role="panel">
+    <div class="cover odc-root">
+        <div class="odc-board">
+            <div class="odc-hole">
+                <div class="odc-hole-inner"></div>
+            </div>
+            <h3 class="odc-title">Today</h3>
+            <div class="odc-paper">
+                <div class="odc-paper-content">
+                    <span class="odc-month">Jan</span>
+
+                    <div class="odc-date">6</div>
+                </div>
+                <div class="odc-day">Sun</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="sandglass-section" data-role="panel">
+    <div id="sandglass" class="sg-root">
+        <div class="sg-bar-left"></div>
+        <div class="sg-bar-right"></div>
+        <div class="sg-board-up"></div>
+        <div class="sg-glass-up">
+            <div class="sg-sand-up"></div>
+            <div class="sg-sand-middle"></div>
+        </div>
+        <div class="sg-glass-down">
+            <div class="sg-sand-down"></div>
+        </div>
+        <div class="sg-board-down"></div>
+    </div>
+</div>
+
+<div id="shogi" data-roe="panel">
+    <a target="_blank" href="">
+        <div class="board">
+            <table>
+                <tbody>
+                <tr>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="kyosha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">香車</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="keima">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">桂馬</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="gin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">銀将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="kin" data-movable="true">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">金将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="gyoku">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">王将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="kin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">金将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="gin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">銀将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="keima">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">桂馬</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="kyosha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">香車</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="square"></td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hisha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">飛車</div>
+                        </div>
+                    </td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="kaku">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">角行</div>
+                        </div>
+                    </td>
+                    <td class="square"></td>
+                </tr>
+                <tr>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="south" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                </tr>
+                <tr>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                </tr>
+                <tr>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                </tr>
+                <tr>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu" data-movable="true">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu" data-movable="true">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu" data-movable="true">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu" data-movable="true">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hu">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">歩兵</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="square"></td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="hisha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">飛車</div>
+                        </div>
+                    </td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square"></td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="kaku">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">角行</div>
+                        </div>
+                    </td>
+                    <td class="square"></td>
+                </tr>
+                <tr>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="kyosha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">香車</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="keima">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">桂馬</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="gin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">銀将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="kin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">金将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="ou">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">王将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="kin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">金将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="gin">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">銀将</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="keima">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">桂馬</div>
+                        </div>
+                    </td>
+                    <td class="square">
+                        <div class="piece" data-dir="north" data-type="kyosha">
+                            <div class="half left">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="half right">
+                                <div class="head"></div>
+                                <div class="body"></div>
+                            </div>
+                            <div class="label">香車</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </a>
+</div>
+<div id="chess" data-role="panel">
+    <a href="http://techbakery.net/chessTek/" target="_blank">
+        <div class="board">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="rook" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts">
+                                            <div class="hat-block-0 parts"></div>
+                                            <div class="hat-block-1 parts"></div>
+                                            <div class="hat-block-2 parts"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="knight" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="nose parts"></div>
+                                        <div class="ear parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="neck-2 parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="bishop" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="cut parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="queen" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="crown parts">
+                                            <div class="needle needle-0">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-1">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-2">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-3">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-4">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="king" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="cross parts">
+                                            <div class="parts cross-bar-vertical"></div>
+                                            <div class="parts cross-bar-horizontal"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="knight" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="nose parts"></div>
+                                        <div class="ear parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="neck-2 parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="rook" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts">
+                                            <div class="hat-block-0 parts"></div>
+                                            <div class="hat-block-1 parts"></div>
+                                            <div class="hat-block-2 parts"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="bishop" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="cut parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="black" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="knight" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="nose parts"></div>
+                                        <div class="ear parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="neck-2 parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="pawn" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="rook" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts">
+                                            <div class="hat-block-0 parts"></div>
+                                            <div class="hat-block-1 parts"></div>
+                                            <div class="hat-block-2 parts"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="knight" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="nose parts"></div>
+                                        <div class="ear parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="neck-2 parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="bishop" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="cut parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="king" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="cross parts">
+                                            <div class="parts cross-bar-vertical"></div>
+                                            <div class="parts cross-bar-horizontal"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark">
+                            <div data-type="queen" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="crown parts">
+                                            <div class="needle needle-0">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-1">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-2">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-3">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                            <div class="needle needle-4">
+                                                <div class="needle-inner left"></div>
+                                                <div class="needle-inner right"></div>
+                                            </div>
+                                        </div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="bishop" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts"></div>
+                                        <div class="head parts"></div>
+                                        <div class="cut parts"></div>
+                                        <div class="neck parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="dark"></div>
+                    </td>
+                    <td>
+                        <div class="square" data-color="light">
+                            <div data-type="rook" data-color="white" class="piece">
+                                <div class="piece-inner">
+                                    <div class="icon">
+                                        <div class="hat parts">
+                                            <div class="hat-block-0 parts"></div>
+                                            <div class="hat-block-1 parts"></div>
+                                            <div class="hat-block-2 parts"></div>
+                                        </div>
+                                        <div class="head parts"></div>
+                                        <div class="body parts"></div>
+                                        <div class="foot parts"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="frame-bar" data-dir="top"></div>
+            <div class="frame-bar" data-dir="right"></div>
+            <div class="frame-bar" data-dir="bottom"></div>
+            <div class="frame-bar" data-dir="left"></div>
+            <div class="clear"></div>
+        </div>
+    </a>
+</div>
+
+<div id="othello" data-role="panel">
+    <a href="http://techbakery.net/othello/" target="_blank">
+        <div class="play-box" data-player="user">
+            <div class="cartridge up dark ai">
+                <ul>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                </ul>
+            </div>
+            <div class="display user" data-player="light">
+                <div class="square" data-row="0" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="3" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="4" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="5" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="6" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="0" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="3" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="4" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="5" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="6" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="1" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="3" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="4" data-color="light" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="5" data-color="dark" data-available="false">
+                    <div class="square-inner" style="left: 0px; top: 0px;">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="6" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="2" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="3" data-color="light" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="4" data-color="light" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="5" data-color="dark" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="6" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="3" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="3" data-color="dark" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="4" data-color="dark" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="5" data-color="dark" data-available="false">
+                    <div class="square-inner" style="left: 0px; top: 0px;">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="6" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="4" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="2" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="3" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="4" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="5" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="6" data-color="light" data-available="true">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="5" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="3" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="4" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="5" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="6" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="6" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="0" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="1" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="2" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="3" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="4" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="5" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="6" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="square" data-row="7" data-column="7" data-color="none" data-available="false">
+                    <div class="square-inner">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <br class="clear">
+
+                <div class="circle cursor" style="display: none; left: 500px; top: 207px;"></div>
+            </div>
+            <div class="cartridge down light user">
+                <ul>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                    <li class="circle"><span class="left"></span><span class="right"></span></li>
+                </ul>
+            </div>
+        </div>
+    </a>
+</div>
+
+
+<div id="rainbow" data-role="panel">
+    <div class="rainbow">
+        <div class="rainbow-inner">
+            <div class="part red">
+                <div class="part orange">
+                    <div class="part yellow">
+                        <div class="part green">
+                            <div class="part indigo">
+                                <div class="part purple">
+                                    <div class="part inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="clock" data-role="panel">
+    <div class="board">
+        <div class="board-inner">
+            <div class="number number3">3</div>
+            <div class="number number6">6</div>
+            <div class="number number9">9</div>
+            <div class="number number12">12</div>
+            <div class="hand long"></div>
+            <div class="hand short"></div>
+        </div>
+    </div>
+</div>
+<div id="fish" data-role="panel">
+    <div class="fish">
+        <div class="tail"></div>
+        <div class="body upper">
+            <div class="body-inner"></div>
+        </div>
+        <div class="body downer">
+            <div class="body-inner"></div>
+        </div>
+        <div class="eye"></div>
+        <div class="gill"></div>
+    </div>
+</div>
+
+<div id="search-box" data-role="panel">
+    <input/>
+
+    <div class="icon">
+        <div class="glass"></div>
+        <div class="bar"></div>
+    </div>
+</div>
+
+<div id="flower" data-role="panel">
+    <div class="container">
+        <div class="stem"></div>
+        <div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+            <div class="petal"></div>
+        </div>
+        <div class="center"></div>
+    </div>
+</div>
+
+<div id="paint-night" data-role="panel">
+    <div class="frame">
+        <div class="canvas">
+            <div class="moon"/>
+        </div>
+        <div class="mountain">
+            <div class="body"></div>
+            <div class="top">
+                <div class="round"></div>
+            </div>
+            <div>
+                <div class="cloud"></div>
+                <div class="cloud"></div>
+            </div>
+            <div>
+                <div class="grass"></div>
+                <div class="grass"></div>
+                <div class="grass"></div>
+                <div class="grass"></div>
+                <div class="grass"></div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<div id="nosmoke" data-role="panel">
+    <div class="circle">
+        <div class="line"></div>
+        <div class="smoke"></div>
+        <div class="smoke2"></div>
+        <div class="cigarette">
+            <div class="fire"></div>
+            <div class="fire"></div>
+            <div class="stick"></div>
+            <div class="stick-base"></div>
+        </div>
+
+    </div>
+</div>
+
+<div id="bathroom" data-role="panel">
+    <div class="woman frame">
+        <div class="head"></div>
+        <div class="upper-body">
+            <div class="shoulder"></div>
+            <div class="left-arm"></div>
+            <div class="right-arm"></div>
+            <br class="clear">
+
+            <div class="skirt"></div>
+        </div>
+        <div class="lower-body">
+            <div class="left-leg"></div>
+            <div class="right-leg"></div>
+        </div>
+    </div>
+    <div class="man frame">
+        <div class="head"></div>
+        <div class="upper-body">
+            <div class="left-arm"></div>
+            <div class="left-split"></div>
+            <div class="right-split"></div>
+            <div class="right-arm"></div>
+            <br class="clear">
+        </div>
+        <div class="lower-body">
+            <div class="left-leg"></div>
+            <div class="split"></div>
+            <div class="right-leg"></div>
+        </div>
+    </div>
+    <br class="clear">
+</div>
+<div id="ball" data-role="panel">
+    <div class="ball"></div>
+</div>
+
+<div id="digit" data-role="panel">
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+<div class="number">
+    <div class="vertical left upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical left downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right upper">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="vertical right downer">
+        <div class="top"></div>
+        <div class="center"></div>
+        <div class="bottom"></div>
+    </div>
+    <div class="horizontal top">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal center">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+    <div class="horizontal bottom">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</div>
+</div>
+<div id="star" data-role="panel">
+    <div class="star">
+        <div class="part"></div>
+        <div class="part"></div>
+        <div class="part"></div>
+        <div class="part"></div>
+        <div class="part"></div>
+    </div>
+</div>
+<div id="question-mark" data-role="panel">
+    <div class="circle">
+        <div class="slit"></div>
+        <div class="end-ball"></div>
+        <div class="bar">
+            <div class="bar-inner"></div>
+            <div class="small-circle"></div>
+        </div>
+    </div>
+</div>
+<div id="arrow" data-role="panel">
+    <div class="arrow-up">
+        <div class="arrow-head"></div>
+        <div class="arrow-body"></div>
+    </div>
+    <div class="arrow-down">
+        <div class="arrow-body"></div>
+        <div class="arrow-head"></div>
+    </div>
+</div>
+
+<div id="balloon" data-role="panel">
+    <div class="balloon">
+        <div class="balloon-inner"></div>
+        <div class="skew"></div>
+    </div>
+</div>
+
+<div id="book-shelf" data-role="panel">
+    <div class="shelf-row">
+        <div class="shelf-row-inner">
+            <div class="book">
+                <span class="book-title"></span>
+            </div>
+            <div class="book">
+                <span class="book-title"></span>
+            </div>
+            <div class="book">
+                <span class="book-title"></span>
+            </div>
+        </div>
+    </div>
+    <div class="shelf-row">
+        <div class="shelf-row-inner">
+            <div class="book">
+                <span class="book-title"></span>
+            </div>
+        </div>
+    </div>
+    <div class="shelf-row">
+        <div class="shelf-row-inner"></div>
+    </div>
+</div>
+
+
+<div class="fb-like" data-send="false" data-width="450" data-show-faces="true"></div>
+<footer>
+    <span>Produced by <a href="http://tech-bakery-notes.blogspot.com/" class="ui-link">Taka Okunishi</a></span>
+</footer>
+</section>
+</body>
+</html>

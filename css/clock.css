@@ -1,0 +1,70 @@
+#clock .board{
+    box-shadow: 1px 1px 3px #333;
+    background: #444;
+    border-radius: 50%;
+    width:80px;
+    height: 80px;
+    padding: 4px;
+    position: relative;
+}
+#clock .board-inner{
+    box-shadow: inset 1px 1px 1px #555;
+    background: #FDFDFD;
+    border-radius: 50%;
+    margin:auto;
+    width:100%;
+    height: 100%;
+    background: -moz-linear-gradient(center top , #FFFFFF, #F0F0F0) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F0F0F0)) repeat scroll 0 0 transparent;
+}
+#clock .number{
+    width:12px;
+    position: absolute;
+    text-align: center;
+
+}
+#clock .number3{
+    right: 8%;
+    top:42%;
+}
+#clock .number9{
+    left: 10%;
+    top:42%;
+}
+#clock .number6{
+    left:45%;
+    bottom:6%;
+}
+#clock .number12{
+    left:40%;
+    top:10%;
+}
+#clock .hand.long{
+    width:2px;
+    height: 47%;
+    position: absolute;
+    left: 48%;
+    top:10%;
+    background: #555;
+    box-shadow: 1px 1px 1px #333;
+    -moz-transform: rotate(-12deg);
+    -moz-transform-origin: 50% 88%;
+    -webkit-transform: rotate(-12deg);
+    -webkit-transform-origin: 50% 88%;
+    border-radius: 30% 30% 10% 10%;
+}
+
+#clock .hand.short{
+    -moz-transform: rotate(42deg);
+    -moz-transform-origin: 50% 88%;
+    -webkit-transform: rotate(42deg);
+    -webkit-transform-origin: 50% 88%;;
+    background: none repeat scroll 0 0 #555555;
+    box-shadow: 1px 1px 1px #333333;
+    height: 31%;
+    left: 48%;
+    position: absolute;
+    top: 23%;
+    width: 2px;
+    border-radius: 30% 30% 10% 10%;
+}

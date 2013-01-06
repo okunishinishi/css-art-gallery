@@ -1,0 +1,62 @@
+#nosmoke .circle{
+    border-radius: 50%;
+    border:10px solid #F33;
+    width:100px;
+    height: 100px;
+    position: relative;
+    background: #F8F8F8;
+}
+#nosmoke .smoke{
+    border-left: 1px solid #333333;
+    border-radius: 50% 10% 0 9%;
+    height: 22px;
+    left: 13px;
+    position: absolute;
+    top: 15px;
+    width: 20px;
+}
+#nosmoke .smoke2{
+    border-left: 1px solid #333333;
+    border-radius: 100% 10% 0 7%;
+    height: 31px;
+    left: 19px;
+    position: absolute;
+    top: 12px;
+    width: 50px;
+}
+#nosmoke .line{
+    width:10px;
+    height: 100px;
+    top:0;
+    background: #F33;
+    position: absolute;
+    left: 45px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    -o-transform:rotate(45deg);
+    transform:rotate(45deg);
+}
+
+#nosmoke div.cigarette{
+    height: 15px;
+    margin: 42px 10px;
+}
+#nosmoke .fire{
+    width:4px;
+    height: 100%;
+    float: left;
+    margin: 1px;
+    background: #F55;
+}
+#nosmoke .stick{
+    width:40px;
+    background: #DDD;
+    float: left;
+    height: 100%;
+}
+#nosmoke .stick-base{
+    width:20px;
+    float: left;
+    background: #A33;
+    height: 100%;
+}

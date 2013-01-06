@@ -1,0 +1,29 @@
+#search-box .icon
+{
+    display: inline-block;
+    height: 15px;
+    left: -21px;
+    position: relative;
+    top: 4px;
+    width: 15px;
+}
+#search-box .icon .glass{
+    position:absolute;
+    width:60%;
+    height:60%;
+    border-radius:50%;
+    border:1px solid #333;
+}
+#search-box .icon .bar{
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 1px 1px 1px 1px;
+    bottom: 0px;
+    height: 45%;
+    position: absolute;
+    right: 3px;
+    width: 16%;
+}

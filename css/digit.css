@@ -1,0 +1,105 @@
+#digit {
+    max-width: 300px;
+}
+#digit .number{
+    width:50px;
+    height: 100px;
+    position: relative;
+    float: left;
+    margin:5px;
+}
+#digit .number:nth-child(1) .horizontal.center,
+#digit .number:nth-child(2) .horizontal,
+#digit .number:nth-child(2) .vertical.left,
+#digit .number:nth-child(3) .vertical.left.upper,
+#digit .number:nth-child(3) .vertical.right.downer,
+#digit .number:nth-child(4) .vertical.left,
+#digit .number:nth-child(5) .vertical.left.downer,
+#digit .number:nth-child(5) .horizontal.top,
+#digit .number:nth-child(5) .horizontal.bottom,
+#digit .number:nth-child(6) .vertical.left.downer,
+#digit .number:nth-child(6) .vertical.right.upper,
+#digit .number:nth-child(7) .vertical.right.upper,
+#digit .number:nth-child(8) .vertical.left,
+#digit .number:nth-child(8) .horizontal.center,
+#digit .number:nth-child(8) .horizontal.bottom,
+#digit .number:nth-child(10) .vertical.left.downer
+
+{
+    display: none;
+}
+
+
+
+#digit .vertical{
+    width:10px;
+    position: absolute;
+}
+#digit .vertical .center{
+    width:10px;
+    height: 30px;
+    background: #777;
+}
+#digit .vertical .top,
+#digit .vertical .bottom{
+    border-width:5px;
+    border-color: #777;
+    border-style: solid;
+}
+#digit .vertical .top
+{
+    border-color:transparent transparent #777777
+}
+#digit .vertical .bottom
+{
+    border-color:#777777 transparent transparent
+}
+#digit .horizontal{
+    position: absolute;
+}
+#digit .horizontal .center{
+    height:10px;
+    width: 30px;
+    background: #777;
+    float:left;
+}
+#digit .horizontal .left,
+#digit .horizontal .right{
+    border-width:5px;
+    border-color: #777;
+    border-style: solid;
+    float:left;
+}
+#digit .horizontal .left
+{
+    border-color:transparent #777777 transparent transparent
+}
+#digit .horizontal .right
+{
+    border-color:transparent transparent transparent #777777
+}
+#digit .horizontal .right:after{
+    clear:both;
+}
+#digit .vertical.left{
+    position: absolute;
+    left: -1px;
+}
+#digit .vertical.right{
+    right: 0px;
+}
+#digit .vertical.upper{
+    top:5px;
+}
+#digit .vertical.downer{
+    bottom:5px;
+}
+#digit .horizontal.top{
+    top:4px;
+}
+#digit .horizontal.center{
+    top:45px;
+}
+#digit .horizontal.bottom{
+    bottom: 3px;
+}
