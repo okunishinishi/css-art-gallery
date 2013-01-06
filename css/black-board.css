@@ -1,0 +1,127 @@
+#black-board .black-board {
+    background-color: #256c28;
+    padding: 8px;
+    margin: 10px 0;
+    -webkit-border-radius: 10px 10px 2px 2px;
+    -moz-border-radius: 10px 10px 2px 2px;
+    -o-border-radius: 10px 10px 2px 2px;
+    -ms-border-radius: 10px 10px 2px 2px;
+    border-radius: 10px 10px 2px 2px;
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    -o-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    -ms-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    padding: 30px 20px 40px;
+    position: relative;
+    background-color: #1c511e;
+    background-image: -webkit-radial-gradient(45% 3%, circle, #256c28 60%, #1c511e);
+    background-image: -moz-radial-gradient(45% 3%, circle, #256c28 60%, #1c511e);
+    background-image: -o-radial-gradient(45% 3%, circle, #256c28 60%, #1c511e);
+    background-image: -ms-radial-gradient(45% 3%, circle, #256c28 60%, #1c511e);
+    background-image: radial-gradient(45% 3%, circle, #256c28 60%, #1c511e);
+    padding:10px;
+}
+#black-board .black-board-frame {
+    position: absolute;
+}
+#black-board .black-board-frame-bottom {
+    bottom: 0;
+    height: 15px;
+    width: 100%;
+    left: 0;
+    background-color: #5e3500;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#915100), to(#5e3500));
+    background-image: -webkit-linear-gradient(#915100, #5e3500);
+    background-image: -moz-linear-gradient(#915100, #5e3500);
+    background-image: -o-linear-gradient(#915100, #5e3500);
+    background-image: -ms-linear-gradient(#915100, #5e3500);
+    background-image: linear-gradient(#915100, #5e3500);
+    -webkit-box-shadow: 1px -4px 6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 1px -4px 6px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 1px -4px 6px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 1px -4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px -4px 6px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 1px 1px 2px 2px;
+    -moz-border-radius: 1px 1px 2px 2px;
+    -o-border-radius: 1px 1px 2px 2px;
+    -ms-border-radius: 1px 1px 2px 2px;
+    border-radius: 1px 1px 2px 2px;
+    z-index: 1;
+}
+#black-board .black-board-item {
+    color: #eaeaea;
+    border: 4px solid #eaeaea;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+    min-width:260px;
+    min-height:59px;
+    border:none;
+}
+#black-board .black-board-item h3 {
+    margin: 0;
+}
+#black-board .black-board-highlight {
+    color: #eeee11;
+}
+.eraser {
+    position: absolute;
+    bottom: 16px;
+    right: 30px;
+    z-index: 0;
+    width: 60px;
+}
+#black-board .eraser-head {
+    height: 8px;
+    background-color: #784300;
+    -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    -ms-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+}
+#black-board .eraser-head-belt {
+    background-color: #333333;
+    margin: 0 auto;
+    height: 100%;
+    width: 10px;
+    padding: 2px 0;
+    position: relative;
+    top: -3px;
+    -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 2px 2px 1px 1px;
+    -moz-border-radius: 2px 2px 1px 1px;
+    -o-border-radius: 2px 2px 1px 1px;
+    -ms-border-radius: 2px 2px 1px 1px;
+    border-radius: 2px 2px 1px 1px;
+}
+#black-board .eraser-body {
+    width: 90%;
+    height: 15px;
+    margin: 0 auto;
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    -o-border-radius: 0 0 6px 6px;
+    -ms-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    background-color: #070541;
+    -webkit-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.4);
+}

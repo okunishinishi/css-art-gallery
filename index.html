@@ -28,8 +28,9 @@
     <link rel="stylesheet" href="css/shogi.css"/>
     <link rel="stylesheet" href="css/sandglass.css"/>
     <link rel="stylesheet" href="css/one-day-calendar.css"/>
+    <link rel="stylesheet" href="css/black-board.css">
 
-    <link rel="shortcut icon" href="fav.ico">
+    <link rel="shortcut icon" href="./fav.ico">
     <title>CSS art gallery</title>
 </head>
 <body>
@@ -62,6 +63,28 @@
     <div id="" data-role="panel">
     </div>
 -->
+<div id="black-board" data-role="panel">
+    <div id="sprint-section" class="black-board">
+        <div class="eraser">
+            <div class="eraser-head">
+                <div class="eraser-head-belt"></div>
+            </div>
+            <div class="eraser-body"></div>
+        </div>
+        <div class="black-board-frame black-board-frame-bottom"></div>
+        <div class="black-board-content">
+            <div class="black-board-item">
+                <h3>
+                    <span class="" style="cursor: pointer;" data-rs-name="number">2x + 3y = 10</span>
+                </h3>
+        <span class="black-board-highlight">
+            <span
+                class="editable" style="cursor: pointer;" data-rs-name="name"></span>
+        </span>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="one-day-calendar" data-role="panel">
     <div class="cover odc-root">
         <div class="odc-board">
@@ -79,7 +102,6 @@
             </div>
         </div>
     </div>
-
 </div>
 
 <div id="sandglass-section" data-role="panel">
