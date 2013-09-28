@@ -91,10 +91,16 @@
 }
 #shogi .piece > .half.left > .head{
     -webkit-transform: skew(-60deg);
+    -moz-transform: skew(-60deg);
+    -o-transform: skew(-60deg);
+    transform: skew(-60deg);
     left: 80%;
 }
 #shogi .piece > .half.right > .head{
     -webkit-transform: skew(60deg);
+    -moz-transform: skew(60deg);
+    -o-transform: skew(60deg);
+    transform: skew(60deg);
     right: 80%;
 }
 
@@ -130,10 +136,16 @@
 
 #shogi .piece > .half.left > .body{
     -webkit-transform: skew(-5deg);
+    -moz-transform: skew(-5deg);
+    -o-transform: skew(-5deg);
+    transform: skew(-5deg);
     left: 30%
 }
 #shogi .piece > .half.right > .body{
     -webkit-transform: skew(5deg);
+    -moz-transform: skew(5deg);
+    -o-transform: skew(5deg);
+    transform: skew(5deg);
     right: 30%
 }
 
